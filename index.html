@@ -10,6 +10,7 @@
       integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD"
       crossorigin="anonymous"
     />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css" integrity="sha512-SzlrxWUlpfuzQ+pcUCosxcglQRNAq/DZjVsC0lE40xsADsfeQoEypE+enwcOiGjk/bSuGGKHEyjSoQ1zVisanQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     
     <title>Document</title>
   </head>
@@ -17,6 +18,19 @@
     .text{
         display: none;
     }
+
+    i{
+        transform: rotate(0deg);
+        position: absolute;
+        right: 20px;
+    }
+    i.active{
+        transform: rotate(180deg);
+    }
+    button{
+        position: relative;
+    }
+    
   </style>
   <body>
     <div class="container">
@@ -29,9 +43,8 @@
             >
 
             INFO
-            <i class="bi bi-chevron-down"></i>
-            <i class="bi bi-chevron-up"></i>
-          </button>
+            <i class="fa-solid fa-chevron-down"></i>
+        </button>
           <div class="button-body1 text">
           <p>
             Lorem, ipsum dolor sit amet consectetur adipisicing elit. Neque,
@@ -47,6 +60,8 @@
               type="button"
             >
               INFO
+        <i class="fa-solid fa-chevron-down"></i>
+
             </button>
             <div class="button-body2 text">
             <p>
@@ -62,6 +77,8 @@
             type="button"
           >
             INFO
+        <i class="fa-solid fa-chevron-down"></i>
+
           </button>
           <div class="button-body3 text">
           <p>
@@ -78,7 +95,3 @@
       
     </body>
     </html>
-
-    <i class="fa-solid fa-chevron-up"></i>
-
-    <i class="fa-solid fa-chevron-down"></i>
